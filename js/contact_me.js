@@ -1,5 +1,12 @@
 $(function() {
 
+  var submitted=false;
+
+  $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(1000);
+    $('#gform').prepend('Your message has been sent...');
+    });
+
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
     submitError: function($form, event, errors) {
