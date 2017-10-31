@@ -3,7 +3,7 @@ $(function() {
   var submitted=false;
 
   $('#gform').on('submit', function(e) {
-    $('#gform *').fadeOut(1000);
+    $('#gform *').fadeOut();
     $('#gform').prepend('Your message has been sent...');
     });
 
